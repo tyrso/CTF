@@ -1,0 +1,159 @@
+leve0 bandit:
+  command: ssh bandit0@bandit.labs.overthewire.org -p 2220
+  password:bandit0 
+level 1
+tips:use cat to find the file
+level 2
+tips:use ./ "filename" for special character
+level 3
+tips:use 'file name' or / before each space to deal with space
+level 4
+tips;use ls -al to find the directory and use cd get into it and use ls to find the filename
+level 5
+tips:use find . | xargs file to find the type of the files in the list
+level 6
+tips:use "find . -type f -size 1033c ! -executable -exec file {} \;"
+note that . means current directory
+! means not(like c++)
+-exec file {} \ will show the type of each files
+and dont forget ;
+level 7
+password:morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+tips: 
+command:"find / -user bandit7 -group bandit6 -size 33c 2>/dev/null"
+-user: for finding the file owned by user
+-group: for finding with group
+-size: for finding with size
+and 2>/dev/null: for direct the error(like permission denied) to /dev/null
+2 is for type2 i/o flow(stands for wrong output)
+> for redirect
+/dev/null will dump all the content you write into
+and finally use cat the/given/path read the file
+note:sometimes you can use cat to find the file through path
+but can't use cd through path,this is due to the permission which cd needs is write but cat only needs read
+password:morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+level 8:
+tips:use cat or strings to find the txt file and use | grep to find the 
+key word
+password: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+level9
+tips:use uniq to find the line only occurs once
+note that uniq can only found duplicated line adjacent so you need to use sort first to organized the text
+command:sort data.txt | uniq -u
+password:4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+level0:
+tips:use grep 'pattern' to find the string and even use
+strings -n num filename"|grep 'pattern'
+-n num will output the strings whose lengths at least num characters
+password:FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+level1:
+tips:use cat data.txt | base64 -d
+-d stands for decode
+and noted:
+-i can ignore garbage like non-alphabet character
+password:dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+level2:
+use python or rotate online
+password:7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+level3:
+use mktemp -d to create new temp docker
+cp filename /path/to/temp to copy data to temp
+use ls check file
+use file filename to estimate filetype
+use mv to chang file type into it form of zip
+use gzip -d,bzip2 -d,tar xvf to unzip the file 
+and loop the process until you find the password
+password:FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+level4:
+tips:use ssh -i sshkey.private bandit14@localhost -p2220 get into user bandit14
+noted that -p2220 and input "yes" is really important!!!
+password:MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+level 15:
+tips:use nc localhost 30000 and input level 14's password
+password:8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+level 16:
+tips:use openssl s_client -connect localhost:30001 -ign_eof
+password:kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
+level 17:
+tips:use nmap localhost -p "left-bound" - "right bound"
+and try each port with ncat --ssl localhost "portnumber"
+level 18:
+tips:use diff passwords.old passwords.new to find the different
+password:x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+level 19: use ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+or use ssh bandit18@bandit.labs.overthewire.org -p 2220 -t /bin/sh
+to get into a simple shell(簡易領域)
+the reason you won't be kick out is because usually we log in and get into Bash shell and the system will automatically read and run .bashrc,
+but in other shells won't
+password:cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
+level 20:
+tips:use ./bandit20 to get the access of bandit20 and use
+./bandit20 cat /etc/bandit_pass/bandit20
+note that the cat command needs to be right after the ./bandit20 so you have the access for password
+password:0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+level 21:
+tips:
+use one terminal to open tunel: nc -l port
+and use another terminal to run the setuid
+and use the initial terminal to key in level 20's password
+password:EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+level 22:
+tips:read the bash file and follow the path
+password:tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+level 23:
+tips:still,read the bash
+password:0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+level24:
+tips: mkdir and write your own shell and cp to the /bandit24/foo/
+note that is /foo/ not /foo,you need /foo to update to the right directory and dont use mktemp -d instead of mkdir there might be some 
+authority problem and the shell will be unable to work,
+also note that dont forget to chmod the txt you want the sh to write
+:chmod 777 pass
+password:gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+
+level25:
+password:iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
+level26:
+tips:resize you terminal height to a small size and therefore it can stop the "more" command and press v to get in vi and use
+:e /etc/bandit_pass/bandit26 to check password
+again--always remember -p 2220 when use ssh
+password:s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+level27:
+tips:if you want to stay at level26 you need to use the technique to get in the vim like previous and 
+use :set shell=/bin/bash
+:shell
+to get into a shell you can work normally and you can use 
+ls to find bandit27-do
+run it (./bandit27-do cat /etc/bandit_pass/bandit27)
+and get the password
+password:upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+level28:
+tips:make a tmp directory and 
+use git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
+note localhost:2220 is the way to specific the port
+and cd to the repo
+password:Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN
+level29:
+tips:first use git branch to checkout if there's any other branch
+then use git log to find other push
+and use git checkout 'commit-hash' to get into other push
+password:4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7
+level30:
+tips:use git branch -r to find all branch
+use git log --all to find all commit in all branch
+and use git show commit-hash filepath to find the file
+ex. git show abc1234 README.md
+password:qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL
+level31:
+tips:use git tag find tag
+and git show tagname and you will find the password 
+password:fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy
+level32:
+tips:
+password:3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K
+level33:
+use $0 to escape from the shell and use
+cat /etc/bandit_pass/bandit33 to find password
+password:tQdtbs5D5i2vJwkO8mEyYEyTL8izoeJ0
+
+job done!!!

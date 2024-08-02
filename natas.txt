@@ -1,0 +1,55 @@
+level 1:
+tips:check the html,check the div
+password:0nzCigAq7t2iALyvU9xcHlYN4MlkIwlq
+level 2:
+tips:use ctrl+u to get in to inspect page
+password: TguMNxKo1DSa1tujBLuZJnDUlCcUAPlI
+level 3:
+tips:try on the source of the page(URL/file)
+password:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
+level 4:
+password:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
+level 5:
+tips:use curl -e fakeURL -u username:password goalURL
+password:0n35PkggAPm2zbEpOU802c0x0Msn1ToK
+level 6:
+tips: observe there's cookie in network that shows logged in = 0
+go to application and edit 0 to 1
+password:0RoJwHdSKWFTYR5WuiAewauSuNaBXned
+level 7:
+tips:read the source code and go to /include/secrect.inc
+password:bmg8SvU1LizuWjx3y7xkNERkHxGre0GS
+level 8:
+tips: note that when you click on page the url end with page=...
+change it to /etc/natas_webpass/natas8
+password:xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q
+level 9:
+tips:read the script
+password:ZE1ck82lmdGIoErlhQgWND6j2Wzz6b6t
+level 10:
+tips:noted that passthru process all the cmd in the string
+use abc ditionary.txt& cat passwd&grep -i
+hide your cmd in the string
+password:t7I5VHvpa14sJTUGV0cbEsbYfFP2dmOu
+level 11:
+tips:grep can use on multiple file
+password:UJdqkK1pTu6VLt9UHWAgRZz6sVUZ3lEk
+level 12:
+tips:find te cookie and use it and cyberchef to find key and the 
+cookie value that can make array =['yes',bgcolr..]
+key:eDWo
+password:yZdkjAYZRd3R7tq7T5kXMjMJlOIkzDeB
+level 13:
+tips:upload an php and make sure to rename it in inspect page before 
+upload it
+password:trbs5pCjCrkuSknBBKHhaBxq6Wm1j3LC
+level 14
+tips:put <?php pa....ru($); ?> in the jpg and upload	
+password:z3UYcr4v4uBpeX8f7EZbMHlzK4UR2XtQ
+level 15:
+tips:use common sql injection
+password:SdqIqBsFcz3yotlNYErZSZwblkm0lrvx
+level 16:
+tips:use 'natas 16 "and password LIKE BINARY: ' brutally find the password
+password:hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
+level 17:

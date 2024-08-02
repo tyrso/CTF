@@ -1,0 +1,21 @@
+level 1:
+password:KRYPTONISGREAT
+level 2:
+password:ROTTEN
+level 3:
+password:CAESARISEASY
+level 4:
+tips:use letter frequency for basic then guess,E for first guess and 
+THE to double check
+password:BRUTE
+level 5:
+tips:if you want to combine two text,make sure the first text's
+length module key's length is 0!or the cnt will broke
+password:CLEARTEXT
+level 6:
+try different word length
+password:RANDOM
+level 7:
+use xxd to observe the key,you may use 'aaaaaaaaa' to find the encrypt pattern and 'bbbbbbbbbbb' to double check
+password:LFSRISNOTRANDOM
+
