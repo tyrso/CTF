@@ -8,6 +8,7 @@ level 3:
 tips:try on the source of the page(URL/file)
 password:3gqisGdR0pjm6tpkDKdIWO2hSvchLeYH
 level 4:
+tips:find robot.txt
 password:QryZXc2e0zahULdHrtHxzyYkj59kUxLQ
 level 5:
 tips:use curl -e fakeURL -u username:password goalURL
@@ -53,3 +54,16 @@ level 16:
 tips:use 'natas 16 "and password LIKE BINARY: ' brutally find the password
 password:hPkjKYviLQctEW33QmuXL6eDVfMW4sGo
 level 17:
+password:EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC
+level 18:
+
+password:6OG1PbKdVjyBlpxgD4DDbRG6ZLlCGgCJ
+level 19:
+password:tnwER7PdfWkxsG4FNWUtoAZ9VyZTJqJr
+level 20:
+tips:use cyberchef and to hex find the cookie is not actually random
+password:p5mCvP7GS2K6Bmt3gqhM2Fc1A5T8MVyw
+level 21:
+password:BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
+level 22:
+password:d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz

