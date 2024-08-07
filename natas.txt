@@ -67,3 +67,44 @@ level 21:
 password:BPhv63cKE1lkQl04cE5CuFTzXe15NfiH
 level 22:
 password:d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
+level 23:
+tips:use python's get and allow_redirects=False to avoid redirect,
+or use curl
+password:dIUQcI3uSus1JEOSSWRAEXBG8KbR8tRs
+level 24:
+tips:note that password need to include iloveyou and greater than 10 in
+lexicographical order,input 22iloveyou to solve
+password:MeuqmfJ8DDKuTr5pcvzFKSwlxedZYEWd
+level 25:
+tips; input wrong datatype to make strcmp return 0
+password:ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws
+level 26:
+password:cVXXwxMS3Y26n5UZU89QgpGmWCelaQlE
+level 27:
+tips:unserialize vulnerability
+password:u3RRffXjysjgwFU6b9xa23i6prmUsYne 
+level 28:
+password:1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj
+level 29:
+tips:observe query in different input and use some sql injection with
+url encoding with cyberchef
+password:31F4j3Qi2PnuhIZQokxXk1L3QT9Cppns
+level 30:
+tips:try injection to find the pl file and observe that
+it loose check of natasand use wildcard
+password:WQhx1BvcmP9irs2MP9tRnLsNaDI76YrH
+level 31:
+tips:make password a array and the numeric element will make
+the query unquoted
+password:m7bfjAHpJmSYgQWWeqRE2qVBuMiRNq0y
+level 32:
+tips:upload two 'file' , one in csv and one in argv
+password:NaIWhW2VIrKqrc7aroJVHOZvk3RQMi0B
+level 33:
+tips:add%20|at the end of url and then the argv will be execute
+password:2v9nDlbSF7jvawaCncr5Z9kSzkmBeoCJ
+level 34:
+tips:use phar
+password:j4O7Q7Q5er5XFRCepmyXJaWCSIrslCJY
+
+
