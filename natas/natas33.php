@@ -6,7 +6,7 @@
         private $signature='adeafbadbabec0dedabada55ba55d00d';
         private $init=False;
     }
-    $phar = new Phar('natas33_try.phar');
+    $phar = new Phar('natas33.phar');
 $phar->startBuffering();
 $phar->addFromString('test.txt', 'text');
 $phar->setStub('<?php __HALT_COMPILER(); ? >');
